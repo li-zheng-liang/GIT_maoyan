@@ -1,0 +1,9 @@
+<!--component/list/list.wxml-->
+<view class='wrap'>
+  <block wx:for="{{image_url}}" wx:key="{{index}}">
+    <view class='content' bindtap='click'>
+      <image src='{{item}}' class='content_img'></image>
+      <view class='content_text'>{{content[index]}}</view>
+    </view>
+  </block>
+</view>

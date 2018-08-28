@@ -1,0 +1,7 @@
+<!--component/hot/hot.wxml-->
+<block wx:for="{{image}}" wx:key="{{index}}">
+  <view class='wrap'>
+    <image src='{{item}}' class='img'></image>
+    <view class='name'>{{text[index]}}</view>
+  </view>
+</block>

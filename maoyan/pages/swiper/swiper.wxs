@@ -1,0 +1,10 @@
+// 定义一个方法
+function filter_img(item) {
+  // 
+  var str = item.replace('w.h', '320.240')
+  return str
+}
+// 方法名
+module.exports = {
+  'filter_img': filter_img
+}

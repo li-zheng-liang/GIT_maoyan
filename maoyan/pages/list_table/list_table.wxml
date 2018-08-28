@@ -1,0 +1,55 @@
+<!--pages/list_table/list_table.wxml-->
+<scroll-view lower-threshold="100" bindscrolltolower="lowerCallback" scroll-y="true" style='height:{{ scroll_height + "px"}}'>
+    <view class='top'>
+      <view class='choose_city'>
+        大连
+        <image src='../../image/pull.png' class='choose_img'></image>
+      </view>
+      <input class='search' placeholder='找艺人、演出、场馆'></input>
+      <image src='../../image/top_search.png' class='top_search'></image>
+    </view>
+    <view style='height:40px'>123</view>
+  <swipers imgUrls="{{imgUrls}}" indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-color="{{indicatorColor}}" indicator-active-color="{{indicatorActiveColor}}" next-margin="{{nextMargin}}">
+  </swipers>
+  <list  image_url="{{image_url}}" content="{{content}}"></list>
+  <list  image_url="{{image_url_}}" content="{{content_}}" class='list'></list>
+  <view class='fen'>
+  -
+  </view>
+  <view class='find'>
+    <view class='find_title'>-发现精彩-</view>
+    <view class='find_img'>
+      <image src='../../image/shao.jpg' class='left'></image>
+      <image src='../../image/zh.jpg' class='right'></image>
+    </view>
+  </view>
+  <view class='hot'>
+    <view class='hot_title'>-热门场馆-</view>
+    <view class='hot_more'>更多 > </view>
+    <view class='nanfeng'>
+      <view class='hot_name'>南风大剧院</view>
+      <view class='time'>
+        <text class='times'>2场在线演出</text>
+        <text class='more'> > </text>
+      </view>
+      <hot image="{{image}}" text="{{text}}"></hot>
+    </view>
+
+    <view class='culture'>
+      <view class='hot_name'>沈阳市文化宫</view>
+      <view class='time'>
+        <text class='times'>2场在线演出</text>
+        <text class='more'> > </text>
+      </view>
+      <hot image="{{image_}}" text="{{text_}}"></hot>
+    </view>
+  </view>
+  <view class='tui'>1</view>
+  <view class='recommend'>
+    <view class='recommend_title'>-为你推荐-</view>
+  </view>
+  <view>
+    <performe json="{{json.data}}" recommend="{{recommend}}" re_index="{{re_index}}" all_time="{{all_time}}" all_index="{{all_index}}" rotate="{{rotate}}" bol="{{bol}}" filterTime_m="{{filterTime_m}}" filterTime_d="{{filterTime_d}}" timeContent="{{timeContent}}"></performe>
+  </view>
+</scroll-view>

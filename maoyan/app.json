@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/list_table/list_table",
+    "pages/logs/logs",
+    "pages/index/index",
+    "pages/cinema/cinema",
+    "pages/location/location",
+    "pages/swiper/swiper"
+
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true,
+    "onReachBottomDistance": 100
+  },
+  "tabBar": {
+    "color": "gray",
+    "selectedColor": "red",
+    "backgroundColor": "white",
+    "borderStyle": "black",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/swiper/swiper",
+        "text": "电影",
+        "iconPath": "image/move_g.png",
+        "selectedIconPath": "image/move_r.png"
+      },
+      {
+        "pagePath": "pages/cinema/cinema",
+        "text": "影院",
+        "iconPath": "image/ying_g.png",
+        "selectedIconPath": "image/ying_r.png"
+      },
+      {
+        "pagePath": "pages/list_table/list_table",
+        "text": "演出",
+        "iconPath": "image/yan_g.png",
+        "selectedIconPath": "image/yan_r.png"
+      }
+    ]
+  }
+}

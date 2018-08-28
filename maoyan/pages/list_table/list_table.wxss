@@ -1,0 +1,136 @@
+/* pages/list_table/list_table.wxss */
+.choose_city{
+  width: 50px;
+  color: red;
+  font-size: 13px;
+  display: inline-block;
+  padding: 10px;
+  vertical-align: top;
+  position: relative;
+}
+.choose_img{
+  width: 10px;
+  height: 5px;
+}
+.top{
+  width: 100%;
+  background-color: gainsboro;
+  position: fixed;
+  top:0;
+  z-index: 1000;
+}
+.search{
+  width: 290px;
+  height: 12px;
+  margin-top: 6px;
+  font-size: 12px;
+  display: inline-block;
+  background-color: white;
+  border-radius: 3px;
+  box-sizing: border-box;
+  padding-left: 100px;
+}
+.top_search{
+  position: absolute;
+  left: 145px;
+  top: 12px;
+  width: 20px;
+  height: 20px;
+}
+page{
+  background-color: gainsboro;
+}
+.fen{
+  background-color: gainsboro;
+  font-size: 10px;
+  color: gainsboro;
+}
+.find{
+  background-color: white;
+  margin-bottom: 12px;
+  position: relative;
+  z-index: 100;
+}
+.find_title{
+  text-align: center;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 10px 0;
+}
+.find_img{
+  padding: 10px;
+}
+.left{
+  width: 175px;
+  margin-right: 5px;
+  height: 100px;
+}
+.right{
+  width: 175px;
+  height: 100px;
+}
+.hot{
+  background-color: white;
+  position: relative;
+  z-index: 100;
+  padding-bottom: 20px;
+}
+.nanfeng{
+  display: inline-block;
+  background-color: gainsboro;
+  margin-right: 5px;
+  margin-left: 15px;
+  padding: 10px 0 10px 10px;
+}
+.culture{
+  display: inline-block;
+  background-color: gainsboro;
+  padding: 10px 0 10px 10px;
+}
+.hot_title{
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+  padding: 10px 0;
+}
+.hot_more{
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 13px;
+  color: gray;
+  display: inline-block;
+  margin-top: 5px;
+}
+.hot_name{
+  font-size: 16px;
+  font-weight: 700;
+}
+.time{
+  font-size: 13px;
+  color: gray;
+  margin: 5px 0;
+  overflow: hidden;
+  padding-right: 5px;
+}
+.more{
+  float: right;
+}
+.recommend{
+  background-color: white;
+  position: relative;
+  z-index: 100;
+}
+.tui{
+  background-color: gainsboro;
+  color: gainsboro;
+  font-size: 12px;
+  position: relative;
+  z-index: 100;
+}
+.recommend_title{
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+  padding: 10px 0;
+}

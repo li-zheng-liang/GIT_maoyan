@@ -1,0 +1,98 @@
+<!--在wxml中去引用wxs  -->
+<!--用来循环第一层后再循环第二层  -->
+<!-- <view wx:for="{{Arr}}">
+  <!-- {{item}}
+  {{fn()}} -->
+  <!-- {{filter.filter_img(item)}} -->
+  <!-- {{item}} -->
+  <!-- <view wx:for="{{item.obj}}">
+      {{item}}
+  </view>
+<!-- </view> --> 
+
+<wxs module="filter" src="swiper.wxs"></wxs>
+<scroll-view lower-threshold="100" bindscrolltolower="lowerCallback" scroll-y="true" style='height:{{ scroll_height + "px"}}'>
+
+<view class='wrap'>
+  <navigator class='wrap_lena'>
+  大连 <image class='wrap_lena_im' src='img/xiaoxia.png'></image>
+  </navigator>
+      <text class='{{wrap_te2}}' bindtap='te1'>正在上映</text>
+      <text class='{{wrap_te1}}' bindtap='te2'>即将上映</text>
+  <navigator class='wrap_rina' url="../../pages/logs/logs">
+      <image class='wrap_img' src='img/sou.png'></image>
+  </navigator>
+</view>
+
+
+<swiper class='swiper' indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}"circular="{{circular}}" interval="{{interval}}" duration="{{duration}}" indicator-color="{{indicatorColor}}" indicator-active-color="{{indicatorActiveColor}}" next-margin="{{nextMargin}}">
+  <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+    <swiper-item>
+      <image style='width:{{width+"px"}};height:100px;' src="{{item}}" class="slide-image" />
+    </swiper-item>
+  </block>
+</swiper>
+<view class='Navigation'>
+    <view class='nav_'>
+    <image class='mian' src='img/mian.png'></image>
+    <view>免费看电影</view>
+    </view>
+
+    <view class='nav_'>
+    <image class='mian' src='img/huaju.png'></image>
+    <view>演唱会/话剧</view>
+    </view>
+
+    <view class='nav_'>
+    <image class='mian' src='img/libao.png'></image>
+    <view>1分抽奖</view>
+    
+    </view>
+
+    <view class='nav_'>
+    <image class='mian' src='img/chou.png'></image>
+    <view>抽电影票</view>
+    </view>
+    
+    <view class='nav_'>
+    <image class='mian' src='img/zheng.png'></image>
+    <view>正版周边</view>
+    </view>
+
+</view>
+
+<view>
+<scroll-view class='center_'lower-threshold="100" scroll-x="true">
+<view class='center_cet' wx:for="{{atr}}" wx:key="{{key}}">{{item}}</view>
+      <view class='center_ce' style='width:{{arrt.coming.length*130}}px;'>
+            <view class='block_' wx:for="{{arrt.coming}}">
+              <image class='block_img' src='{{filter.filter_img(item.img)}}'></image>
+              <view class='center_vi1'>{{item.nm}}</view>
+              <view class='center_vi2'>{{item.wish}}人想看</view>
+              <view class='center_vi3'>{{item.comingTitle}}</view>
+            </view>
+      </view>
+</scroll-view>
+
+
+  <view class='number_'>
+    <block wx:for="{{arr.movieList || arr.coming }}" wx:key="{{key}}">
+        <view class='number_zong'>
+           <view>
+        <!--在引用到wsml的wxs中module的名字后加上wxs文件中定义函数名  -->
+         <image class='f_img' src="{{filter.filter_img(item.img)}}"></image>
+           </view>
+           <view class='number_introduce'>
+           <view class='number_introduce_vi1'>{{item.nm}}</view>
+           <view class='number_introduce_vi2'>猫眼评分:
+           <text class='number_introduce_vi2_te'>{{item.sc}}</text>
+           </view>
+           <view class='number_introduce_vi3'>主演:{{item.star}}</view>
+          </view>
+          <button class='number_zong_btn' size='mini'>{{item.globalReleased == true ? "购票": "预售"}}</button>
+        </view>
+    </block>
+  </view>
+</view>
+</scroll-view>

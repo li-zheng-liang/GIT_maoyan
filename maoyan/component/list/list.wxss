@@ -1,0 +1,23 @@
+component/list/list.wxss
+.wrap{
+  overflow: hidden;
+  box-sizing: border-box;
+  background-color: white;
+}
+.content{
+  width: 20%;
+  text-align: center;
+  float: left;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: white;
+}
+.content_img{
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+}
+.content_text{
+  display: inline-block;
+  font-size: 12px;
+}

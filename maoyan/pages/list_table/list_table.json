@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "list": "../../component/list/list",
+    "swipers":"../../component/swiper/swiper",
+    "hot":"../../component/hot/hot",
+    "performe": "../../component/performe/performe"
+  }
+}

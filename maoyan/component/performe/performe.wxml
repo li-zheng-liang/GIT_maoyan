@@ -1,0 +1,57 @@
+<!--component/performe/performe.wxml-->
+<view class='wrap_'>
+  <view class='re_select'>
+      <block wx:for="{{recommend}}" wx:key="{{index}}">
+        <text bindtap='re_click' data-index="{{index}}" class='selected' 
+        style='color:{{index == re_index ? "red" : "black"}}' >{{item}}</text>
+      </block>
+      <view class='all_time' bindtap='allTime_click'>
+        {{timeContent}}
+        <image src='../../image/pull.png' class='tran_img' style='transform:{{rotate}}'></image>
+      </view>
+  </view>
+  <view wx:if="{{bol}}">
+    <view class='all_time_wrap'>
+      <block wx:for="{{all_time}}" wx:key="{{index}}">
+        <view bindtap='allTimeChoose' data-index="{{index}}" class='all_time_choose' style='color:{{index == all_index ? "red" : "black"}}' data-tcontent="{{item}}">
+          {{item}}
+          <view class='dui_wrap'>
+            <image src='../../image/dui.png' class='dui'style='display:{{index == all_index ? "block" : "none"}}'></image>
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>
+</view>
+<view class='fixed_wrap' wx:if="{{bol}}" bindtap='fixed'></view>
+<block wx:for="{{json}}" wx:key="{{index}}">
+  <view wx:if="{{(item.showTimeRange[6]*1 == filterTime_m && item.showTimeRange[8]*10 + item.showTimeRange[9]*1 <= filterTime_d) || filterTime_m == ''}}">
+    <view class='wrap'>
+      <view class='left'>
+        <image src='{{item.posterUrl}}' class='left_img'></image>
+      </view>
+      <view class='right'>
+        <view class='shop_name'>{{item.name}}</view>
+        <view class='show_time'>
+          <image src='../../image/clock.png' class='clock'></image>
+          {{item.showTimeRange}}
+        </view>
+        <view  class='city_name'>
+          <image src='../../image/position.png' class='position'></image>
+          <text>{{item.cityName}}</text>
+          <text>{{item.shopName}}</text>
+        </view>
+        <view class='money_wrap'>
+          <text class='money'>{{item.priceRange}}</text>
+          <text class='money_'>元</text>
+          <view wx:if="{{item.self}}"  class='self'>
+            <text>自营</text>
+          </view>
+          <view wx:if="{{!item.limit}}"  class='limit'>
+            <text>可选座</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</block>

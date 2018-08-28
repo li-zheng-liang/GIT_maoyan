@@ -1,0 +1,155 @@
+/* pages/swiper/swiper.wxss */
+.wrap{
+  border-bottom: 1px solid gainsboro;
+  border-top: 1px solid gainsboro;
+  position: relative;
+}
+.wrap_lena{
+  display: inline-block;
+  font-weight: 300;
+  font-size: 16px;
+  margin: 10px 15px;
+  font-family: 楷体;
+}
+.wrap_rina{
+  display: inline-block; 
+  position: absolute;
+  top: 6px;
+  right: 15px;
+  border-left: 1px solid gainsboro; 
+  padding-left: 10px;
+}
+
+.wrap_te1{
+  display: inline-block;
+  margin: 0 20px;
+  padding: 8px 0;
+  text-align: center;
+  font-size: 18px;
+}
+.wrap_te2{
+  display: inline-block;
+  margin: 0 20px;
+  padding: 8px 0;
+  text-align: center;
+  font-size: 18px;
+  font-family: 楷体;
+  color: red;
+  border-bottom:1.5px solid red; 
+}
+.wrap_lena_im{
+  width: 10px;
+  height: 10px;
+  
+}
+.wrap_img{
+  width:30px;
+  height:30px;
+  line-height: 100%;
+  text-align: center;
+}
+.swiper{
+  height: 100px;
+}
+.mian{
+  width: 30px;
+  height: 30px;
+  padding-bottom: 10px;
+}
+.Navigation{
+  width: 100%;
+  font-size: 3.7vw;
+  font-weight: 500;
+  font-family: 宋体;
+  padding: 2%;
+  border-bottom: 1.5px solid gainsboro;
+
+}
+.nav_{
+  display: inline-block;
+  margin: 1.5%;
+  text-align: center;
+}
+.f_img{
+  width: 80px;
+  height: 100px;
+}
+.number_{
+  padding: 2%;
+}
+.number_zong{
+  position: relative;
+  padding: 10px;
+  border-bottom: 1px solid gainsboro;
+}
+.number_introduce{
+  position: absolute;
+  top:3%;
+  left:100px;
+  display: inline-block;
+}
+.number_introduce_vi1{
+  font-size: 5vw;
+  padding-bottom: 10px;
+}
+.number_introduce_vi2{
+  font-size: 4vw;
+  font-weight: 300;
+  padding-bottom: 10px;
+}
+.number_introduce_vi3{
+  font-size: 4vw;
+  font-weight: 300;
+  width: 150px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  -webkit-line-clamp:1;
+}
+.number_zong_btn{
+  position: absolute;
+  top: 45%;
+  right:2%;
+  color: white;
+  background-color: red;
+}
+.number_introduce_vi2_te{
+  color: orange;
+  font-size: 5vw;
+}
+.block_{
+  text-align: center;
+  display: inline-block;
+  margin: 0 10px;
+
+}
+.block_img{
+  width: 80px;
+  height: 100px;
+}
+.center_{
+  width: 100%;
+}
+.center_cet{
+  font-size: 4vw;
+  font-family: 宋体;
+  padding: 10px;
+}
+.center_vi1{
+  font-size: 4vw;
+  width: 100px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  -webkit-line-clamp:1;
+}
+.center_vi2{
+  font-size: 3.5vw;
+  color: gray;
+}
+.center_vi3{
+  font-size: 3.5vw;
+  color: gray;
+}
